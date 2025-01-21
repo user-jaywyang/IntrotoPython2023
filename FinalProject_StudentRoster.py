@@ -1,4 +1,4 @@
-import Student
+import FinalProject_Student
 import matplotlib.pyplot as plt
 import json
 
