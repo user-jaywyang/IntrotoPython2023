@@ -1,0 +1,33 @@
+def main():
+    #input a list of integers and return various print statements
+
+    intlist = []
+    intlist = eval(input("Please input a list of integers: "))
+    length = len(intlist)
+
+    print(length)                         # a) number of items
+    print(intlist[-1])                    # b) last item
+
+    new_list = []
+    for x in range(length-1,-1,-1):
+        new_list.append(intlist[x])
+    print(new_list)                       # c) reverse list
+    
+    if 5 in intlist:                      # d) contains "5" check
+        print("Yes")
+    else:
+        print("No")
+
+    count = 0                             # e) the number of "5"
+    
+    for y in range(length):
+        if intlist[y] == 5:
+            count = count + 1
+    print(f"There are {count} 5s in the list.")
+
+    intlist = list(intlist[1:-1])        # f) first and last items removed and rest is sorted
+    intlist.sort()
+    print(intlist)
+
+
+main()
