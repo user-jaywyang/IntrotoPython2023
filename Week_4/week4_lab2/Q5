@@ -1,0 +1,20 @@
+def main():
+    # takes two lists of the same size and produces a new list with CORRESPONDING indexes added together
+    listL = []
+    listM = []
+    listL = eval(input("Please enter a list of numbers: "))
+    listM = eval(input("Please enter another list of numbers: "))
+
+    if len(listL) != len(listM):          #List Check!
+        print("The lengths of the lists differ, please enter lists of the same length.")
+
+    else:
+        new_list = []                    #Declare new list for printing!
+
+        for x in range(len(listL)):          
+            y = listL[x] +listM[x]       #add
+            new_list.append(y)
+                        
+        print(new_list)
+    
+main()
