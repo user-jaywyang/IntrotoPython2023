@@ -1,7 +1,7 @@
 def main():
     # Final Project Question 2
     # Author: Jay Yang
-    # Date: 12/14/2022
+    # Date: 12/14/2023
     # Input is two different times in (hh:mm am/pm)
     # Output is the difference of MINUTES between two input times
 
