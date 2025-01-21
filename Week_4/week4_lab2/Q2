@@ -1,0 +1,34 @@
+from random import randrange
+
+def main():
+    # operations on random list of 20 ints betsween 1 and 100
+
+    randlist = []
+    length = 20
+
+    for x in range(length):
+        randlist.append(randrange(1,101))
+    print(randlist)                        #a) print random list
+    
+    total = sum(randlist)
+    avg = total/length
+    print(f"The average of the list is {avg}.")       #b)
+
+    high = max(randlist)
+    low = min(randlist)
+    print(f"The highest value in the list is {high} while the lowest is {low}.")   #c)
+
+    randlist.sort()          #sort for list counting index
+    sechigh = randlist[-2]
+    seclow = randlist[1]
+    print(f"The second highest value in the list is {sechigh} while the second lowest is {seclow}.")   #d)
+
+
+    cache = 0
+    for x in range(length):
+        if randlist[x] %2 == 0:
+            cache = cache + 1
+    print(f"There are {cache} even numbers in the list.")   #e)
+
+
+main()
