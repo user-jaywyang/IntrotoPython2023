@@ -1,0 +1,16 @@
+def main():
+    #start with list [8,9,10] and does various operations on it to return new list
+
+    start = [8,9,10]
+    start[1] = 17
+    start.append(4)
+    start.append(5)
+    start.append(6)
+    del start[0]
+    start.sort()
+    start = start + start
+    start.insert(3,25)
+
+    print(start)
+
+main()
