@@ -1,4 +1,4 @@
-FA2023 Intro to Python assigments
+FA2023 Intro to Python assignments
 
 Only adding large assignments showing progression of code ability.
 
